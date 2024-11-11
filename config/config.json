@@ -1,15 +1,15 @@
 {
-    "testData": true,
+    "testData": false,
     "deploySAP": true,
-    "deploySFDC": true,
-    "deployMarketing": true,
-    "deployOracleEBS": true,
-    "deployDataMesh": true,
+    "deploySFDC": false,
+    "deployMarketing": false,
+    "deployOracleEBS": false,
+    "deployDataMesh": false,
     "deploySAPMLModels": false,
-    "turboMode": true,
-    "projectIdSource": "",
-    "projectIdTarget": "",
-    "targetBucket": "",
+    "turboMode": false,
+    "projectIdSource": "pry-cortex-camposol",
+    "projectIdTarget": "pry-cortex-camposol",
+    "targetBucket": "poccortexsap",
     "location": "US",
     "testDataProject": "kittycorn-public",
     "k9": {
@@ -19,14 +19,15 @@
         }
     },
     "DataMesh": {
-        "deployDescriptions": true,
+        "deployDescriptions": false,
         "deployLakes": false,
+
         "deployCatalog": false,
         "deployACLs": false
     },
     "SAP": {
         "deployCDC": true,
-        "SQLFlavor": "ecc",
+        "SQLFlavor": "s4",
         "mandt": "100",
         "languages": [
             "E",
@@ -36,16 +37,16 @@
             "USD"
         ],
         "datasets": {
-            "cdc": "",
-            "raw": "",
+            "cdc": "CDC_SAP",
+            "raw": "CDC_SAP",
             "ml": "ML_MODELS",
             "reporting": "REPORTING"
         }
     },
     "SFDC": {
-        "deployCDC": true,
-        "createMappingViews": true,
-        "createPlaceholders": true,
+        "deployCDC": false,
+        "createMappingViews": false,
+        "createPlaceholders": false,
         "currencies": [
             "USD"
         ],
@@ -56,17 +57,17 @@
         }
     },
     "marketing": {
-        "deployGoogleAds": true,
-        "deployCM360": true,
-        "deployTikTok": true,
-        "deployLiveRamp": true,
-        "deployMeta": true,
-        "deploySFMC": true,
-        "deployDV360": true,
-        "deployGA4": true,
+        "deployGoogleAds": false,
+        "deployCM360": false,
+        "deployTikTok": false,
+        "deployLiveRamp": false,
+        "deployMeta": false,
+        "deploySFMC": false,
+        "deployDV360": false,
+        "deployGA4": false,
         "dataflowRegion": "",
         "GoogleAds": {
-            "deployCDC": true,
+            "deployCDC": false,
             "lookbackDays": 180,
             "datasets": {
                 "cdc": "",
@@ -75,7 +76,7 @@
             }
         },
         "CM360": {
-            "deployCDC": true,
+            "deployCDC": false,
             "dataTransferBucket": "",
             "datasets": {
                 "cdc": "",
@@ -84,7 +85,7 @@
             }
         },
         "TikTok": {
-            "deployCDC": true,
+            "deployCDC": false,
             "datasets": {
                 "cdc": "",
                 "raw": "",
@@ -97,7 +98,7 @@
             }
         },
         "Meta": {
-            "deployCDC": true,
+            "deployCDC": false,
             "datasets": {
                 "cdc": "",
                 "raw": "",
@@ -105,7 +106,7 @@
             }
         },
         "SFMC": {
-            "deployCDC": true,
+            "deployCDC": false,
             "fileTransferBucket": "",
             "datasets": {
                 "cdc": "",
@@ -114,7 +115,7 @@
             }
         },
         "DV360": {
-            "deployCDC": true,
+            "deployCDC": false,
             "datasets": {
                 "raw": "",
                 "cdc": "",
