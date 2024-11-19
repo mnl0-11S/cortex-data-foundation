@@ -6,10 +6,10 @@
     "deployOracleEBS": false,
     "deployDataMesh": false,
     "deploySAPMLModels": false,
-    "turboMode": false,
+    "turboMode": true,
     "projectIdSource": "pry-cortex-camposol",
     "projectIdTarget": "pry-cortex-camposol",
-    "targetBucket": "poccortexsap",
+    "targetBucket": "dagcortexcamposol",
     "location": "US",
     "testDataProject": "kittycorn-public",
     "k9": {
@@ -28,19 +28,20 @@
     "SAP": {
         "deployCDC": true,
         "SQLFlavor": "s4",
-        "mandt": "100",
+        "mandt": "300",
         "languages": [
             "E",
             "S"
         ],
         "currencies": [
-            "USD"
+            "USD",
+            "PEN"
         ],
         "datasets": {
             "cdc": "CDC_SAP",
             "raw": "CDC_SAP",
-            "ml": "ML_MODELS",
-            "reporting": "REPORTING"
+            "ml": "ML_MODELS_PRD",
+            "reporting": "REPORTING_PRD"
         }
     },
     "SFDC": {

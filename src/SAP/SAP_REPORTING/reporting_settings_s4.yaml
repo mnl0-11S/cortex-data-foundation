@@ -25,7 +25,7 @@ bq_independent_objects:
 
   - sql_file: CurrencyConversion.sql
     description: "Exchange Rate for Currency Conversion"
-    type: table
+    type: table #se puede modificar por view
     table_setting:
       cluster_details: { columns: ["ToCurrency_TCURR"] }
       load_frequency: "@daily"
