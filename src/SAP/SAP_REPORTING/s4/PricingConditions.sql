@@ -77,9 +77,9 @@ SELECT
   -- prcd_elements.KWERT * currency_conversion.UKURS AS ConditionValueInTargetCurrency_KWERT,
   prcd_elements.VAL_ZERO AS ProcessConditionsWithValueEqualToZero_VAL_ZERO,
   prcd_elements.IS_ACCT_DETN_RELEVANT AS StatisticalAndRelevantForAccountDetermination_IS_ACCT_DETN_RELEVANT,
-  prcd_elements.TAX_COUNTRY AS TaxReportingCountry_TAX_COUNTRY,
+  --prcd_elements.TAX_COUNTRY AS TaxReportingCountry_TAX_COUNTRY,
   prcd_elements.WAERK AS SDDocumentCurrency_WAERK,
-  prcd_elements.DATAAGING AS DataFilterValueForDataAging_DATAAGING,
+  prcd_elements._DATAAGING AS DataFilterValueForDataAging_DATAAGING,
   COALESCE(prcd_elements.WAERS, '') AS CurrencyKey_WAERS,
   -- decimal place of amounts for non-decimal-based currencies
   COALESCE(prcd_elements.KWERT * currency_decimal.CURRFIX, prcd_elements.KWERT) AS ConditionValue_KWERT

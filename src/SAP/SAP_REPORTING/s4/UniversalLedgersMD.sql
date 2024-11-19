@@ -10,11 +10,11 @@ SELECT
   finsc_ledger.XLEADING AS LeadingLedgerIndicator_XLEADING,
   finsc_ledger.CORE AS LedgerOfExtensionLedger_CORE,
   finsc_ledger.valutyp AS ValuationView_VALUTYP,
-  finsc_ledger.VALUSUBTYP AS ValuationViewSubtype_VALUSUBTYP,
+  --finsc_ledger.VALUSUBTYP AS ValuationViewSubtype_VALUSUBTYP,
   finsc_ledger.MAN_POST_NOT_ALLWD AS ManualPostingsNotAllowed_MAN_POST_NOT_ALLWD,
-  finsc_ledger.acc_PRINCIPLE AS CorporateAccountingPrinciple_ACC_PRINCIPLE,
-  finsc_ledger.FALLBACK_LEDGER AS FallbackLedger_FALLBACK_LEDGER,
-  finsc_ledger.TECH_LEDGER AS TechnicalLedger_TECH_LEDGER,
+  --finsc_ledger.acc_PRINCIPLE AS CorporateAccountingPrinciple_ACC_PRINCIPLE,
+  --finsc_ledger.FALLBACK_LEDGER AS FallbackLedger_FALLBACK_LEDGER,
+  --finsc_ledger.TECH_LEDGER AS TechnicalLedger_TECH_LEDGER,
   finsc_ledger.XCASH_LEDGER AS CashLedgerIndicator_XCASH_LEDGER
 FROM
   `{{ project_id_src }}.{{ dataset_cdc_processed_s4 }}.finsc_ledger` AS finsc_ledger
