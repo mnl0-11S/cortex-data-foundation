@@ -192,11 +192,11 @@ SELECT
   -- STPO.ABLAD AS UnloadingPoint_ABLAD,
   -- STPO.WEMPF AS GoodsRecipient_WEMPF,
   -- STPO.CUFACTOR AS Cu_NumberOfCuInstances_CUFACTOR,
-  STPO.FSH_VMKZ AS DeviationValuesMaintainedForComponentAtVariantLevel_FSH_VMKZ,
-  STPO.FSH_PGQR AS QuantityDistributionProfile_FSH_PGQR,
-  STPO.FSH_PGQRRF AS ReferenceToQuantityDistributionProfile_FSH_PGQRRF,
-  STPO.FSH_CRITICAL_COMP AS CriticalComponentIndicator_FSH_CRITICAL_COMP,
-  STPO.FSH_CRITICAL_LEVEL AS CrticalLevelOfAComponentInBom_FSH_CRITICAL_LEVEL,
+  -- STPO.FSH_VMKZ AS DeviationValuesMaintainedForComponentAtVariantLevel_FSH_VMKZ,
+  -- STPO.FSH_PGQR AS QuantityDistributionProfile_FSH_PGQR,
+  -- STPO.FSH_PGQRRF AS ReferenceToQuantityDistributionProfile_FSH_PGQRRF,
+  -- STPO.FSH_CRITICAL_COMP AS CriticalComponentIndicator_FSH_CRITICAL_COMP,
+  -- STPO.FSH_CRITICAL_LEVEL AS CrticalLevelOfAComponentInBom_FSH_CRITICAL_LEVEL,
   STPO.FUNCID AS FunctionIdentifier_FUNCID
 FROM
   `{{ project_id_src }}.{{ dataset_cdc_processed_ecc }}.mast` AS MAST

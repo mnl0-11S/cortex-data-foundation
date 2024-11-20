@@ -25,7 +25,7 @@ SELECT
   EKES.HANDOVERDATE AS HandoverDateAtTheHandoverLocation_HANDOVERDATE,
   EKES.HANDOVERTIME AS HandoverTimeAtTheHandoverLocation_HANDOVERTIME,
   EKES.SGT_SCAT AS StockSegment_SGT_SCAT,
-  EKES.FSH_SALLOC_QTY AS AllocatedStockQuantity_FSH_SALLOC_QTY,
+  -- EKES.FSH_SALLOC_QTY AS AllocatedStockQuantity_FSH_SALLOC_QTY,
   vendor.AccountNumberOfVendorOrCreditor_LIFNR,
   vendor.NAME1, vendor.NAME2, docs.TermsPaymentKey_ZTERM, docs.DiscountDays1_ZBD1T
 FROM `{{ project_id_src }}.{{ dataset_cdc_processed_ecc }}.ekes` AS EKES

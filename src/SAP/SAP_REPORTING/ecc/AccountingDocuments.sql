@@ -748,7 +748,7 @@
     BSEG.FMXDOCLN AS FmReferenceLineItem_FMXDOCLN,
     BSEG.FMXZEKKN AS FmReferenceSequenceAccountAssignment_FMXZEKKN,
     BSEG.PRODPER AS ProductionMonth_dateToFindPeriodAndYear_PRODPER,
-    BSEG.RECRF AS ServiceTaxRecreditFlag_RECRF,
+    -- BSEG.RECRF AS ServiceTaxRecreditFlag_RECRF,
     --##CORTEX-CUSTOMER Consider adding other dimensions from the calendar_date_dim table as per your requirement
     CalendarDateDimension_BUDAT.CalYear AS YearOfPostingDateInTheDocument_BUDAT,
     CalendarDateDimension_BUDAT.CalMonth AS MonthOfPostingDateInTheDocument_BUDAT,

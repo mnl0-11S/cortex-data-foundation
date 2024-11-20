@@ -7,9 +7,9 @@
     "deployDataMesh": false,
     "deploySAPMLModels": false,
     "turboMode": true,
-    "projectIdSource": "pry-cortex-camposol",
-    "projectIdTarget": "pry-cortex-camposol",
-    "targetBucket": "dagcortexcamposol",
+    "projectIdSource": "co-grupoexito-sap-denodo-poc",
+    "projectIdTarget": "co-grupoexito-sap-denodo-poc",
+    "targetBucket": "dagscortex",
     "location": "US",
     "testDataProject": "kittycorn-public",
     "k9": {
@@ -27,15 +27,14 @@
     },
     "SAP": {
         "deployCDC": true,
-        "SQLFlavor": "s4",
-        "mandt": "300",
+        "SQLFlavor": "ecc",
+        "mandt": "400",
         "languages": [
             "E",
             "S"
         ],
         "currencies": [
-            "USD",
-            "PEN"
+            "USD"
         ],
         "datasets": {
             "cdc": "CDC_SAP",

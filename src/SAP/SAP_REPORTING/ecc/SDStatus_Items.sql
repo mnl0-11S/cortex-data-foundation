@@ -40,7 +40,7 @@ SELECT
   VBUP.MANEK AS ManualCompletionOfContract_MANEK,
   VBUP.HDALL AS InboundDeliveryItemNotYetComplete__onHold___HDALL,
   VBUP.LTSPS AS Indicator_StockableTypeSwitchedIntoStandardProduct_LTSPS,
-  VBUP.FSH_AR_STAT_ITM AS AllocationStatusOfASalesDocumentItem_FSH_AR_STAT_ITM,
+  -- VBUP.FSH_AR_STAT_ITM AS AllocationStatusOfASalesDocumentItem_FSH_AR_STAT_ITM,
   VBUP.MILL_VS_VSSTA AS StatusOfSalesOrderItem_MILL_VS_VSSTA,
   ( CASE VBUP.FKSTA
     WHEN 'A' THEN 'Not Yet Processed'
