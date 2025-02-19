@@ -82,6 +82,6 @@ SELECT
   vbuk.CMPS_CM AS StatusOfCreditCheckSapCreditManagement_CMPS_CM,
   vbuk.CMPS_TE AS StatusOfTechnicalErrorSapCreditManagement_CMPS_TE,
   vbuk.VBTYP_EXT AS ExtensionOfSdDocumentCategory_VBTYP_EXT,
-  vbuk.FSH_AR_STAT_HDR AS OverallAllocationStatusSalesDocumentHeader_FSH_AR_STAT_HDR
+  -- vbuk.FSH_AR_STAT_HDR AS OverallAllocationStatusSalesDocumentHeader_FSH_AR_STAT_HDR
 FROM
   `{{ project_id_src }}.{{ dataset_cdc_processed_ecc }}.vbuk` AS vbuk

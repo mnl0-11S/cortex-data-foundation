@@ -8,7 +8,7 @@ SELECT
   t881.SUBAPPL AS SubApplication_SUBAPPL,
   t881.XLEADING AS LeadingLedgerIndicator_XLEADING,
   t881.VALUTYP AS ValuationView_VALUTYP,
-  t881.XCASH_LEDGER AS CashLedgerIndicator_XCASH_LEDGER,
+  -- t881.XCASH_LEDGER AS CashLedgerIndicator_XCASH_LEDGER,
   t881.GCURR AS Currency_GCURR,
   t881.CLASS AS CompanyCurrencyRole_CLASS,
   t881.LOGSYS AS LogicalSystem_LOGSYS,

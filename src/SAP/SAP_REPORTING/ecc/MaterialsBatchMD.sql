@@ -37,10 +37,10 @@ SELECT
   mch1.ERSDA_TMSTP AS UTCTimeStampInShortForm_ERSDA_TMSTP,
   mch1.ERSDA_TZ_SYS AS TimeZone_ERSDA_TZ_SYS,
   mch1.ERSDA_TZ_USR AS TimeZone_ERSDA_TZ_USR,
-  mch1.ZFDAT AS CertificationDate_ZFDAT,
-  mch1.FSH_SEASON_YEAR AS SeasonYear_FSH_SEASON_YEAR,
-  mch1.FSH_SEASON AS Season_FSH_SEASON,
-  mch1.FSH_COLLECTION AS FashionCollection_FSH_COLLECTION,
-  mch1.FSH_THEME AS FashionTheme_FSH_THEME
+  -- mch1.ZFDAT AS CertificationDate_ZFDAT,
+  -- mch1.FSH_SEASON_YEAR AS SeasonYear_FSH_SEASON_YEAR,
+  -- mch1.FSH_SEASON AS Season_FSH_SEASON,
+  -- mch1.FSH_COLLECTION AS FashionCollection_FSH_COLLECTION,
+  -- mch1.FSH_THEME AS FashionTheme_FSH_THEME
 FROM
   `{{ project_id_src }}.{{ dataset_cdc_processed_ecc }}.mch1` AS mch1

@@ -20,7 +20,7 @@ SELECT
   T001K.MLCCS AS ActiveActualCostComponentSplit_MLCCS,
   T001K.XEFRE AS DelCostsToPriceDiffAcctWhenPurchAcctActive_XEFRE,
   T001K.EFREJ AS StartOfValidityPeriodFDelCostsInPriceDiffAcct_EFREJ,
-  T001K.FMP_PRSFR AS PriceReleaseFlexibleMaterialPrices_FMP_PRSFR,
-  T001K.FMP_PRFRGR AS PriceReleaseGroup_FMP_PRFRGR
+  -- T001K.FMP_PRSFR AS PriceReleaseFlexibleMaterialPrices_FMP_PRSFR,
+  -- T001K.FMP_PRFRGR AS PriceReleaseGroup_FMP_PRFRGR
 FROM
   `{{ project_id_src }}.{{ dataset_cdc_processed_ecc }}.t001k` AS T001K

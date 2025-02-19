@@ -7,15 +7,15 @@
     "deployDataMesh": false,
     "deploySAPMLModels": false,
     "turboMode": true,
-    "projectIdSource": "pry-cortex-camposol",
-    "projectIdTarget": "pry-cortex-camposol",
-    "targetBucket": "dagcortexcamposol",
-    "location": "US",
+    "projectIdSource": "onus-dev-proy-asistent-virtual", 
+    "projectIdTarget": "onus-dev-proy-asistent-virtual",
+    "targetBucket": "bk-cortex-dax-01",
+    "location": "us-central1",
     "testDataProject": "kittycorn-public",
     "k9": {
         "datasets": {
-            "processing": "K9_PROCESSING",
-            "reporting": "K9_REPORTING"
+            "processing": "K9_PROCESSING_ECD",
+            "reporting": "K9_REPORTING_ECD"
         }
     },
     "DataMesh": {
@@ -27,21 +27,21 @@
     },
     "SAP": {
         "deployCDC": true,
-        "SQLFlavor": "s4",
-        "mandt": "300",
+        "SQLFlavor": "ecc",
+        "mandt": "400",
         "languages": [
             "E",
             "S"
         ],
         "currencies": [
             "USD",
-            "PEN"
+            "MXN"
         ],
         "datasets": {
-            "cdc": "CDC_SAP",
-            "raw": "CDC_SAP",
-            "ml": "ML_MODELS_PRD",
-            "reporting": "REPORTING_PRD"
+            "cdc": "CDC_SAP_ECD",
+            "raw": "CDC_SAP_ECD",
+            "ml": "ML_MODELS_ECD",
+            "reporting": "REPORTING_ECD"
         }
     },
     "SFDC": {
