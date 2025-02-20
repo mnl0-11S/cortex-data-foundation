@@ -9,13 +9,13 @@
     "turboMode": true,
     "projectIdSource": "onus-dev-proy-asistent-virtual", 
     "projectIdTarget": "onus-dev-proy-asistent-virtual",
-    "targetBucket": "bk-cortex-dax-01",
+    "targetBucket": "bk-cortex-dax-02",
     "location": "us-central1",
     "testDataProject": "kittycorn-public",
     "k9": {
         "datasets": {
-            "processing": "K9_PROCESSING_ECD",
-            "reporting": "K9_REPORTING_ECD"
+            "processing": "K9_PROCESSING_RED",
+            "reporting": "K9_REPORTING_RED"
         }
     },
     "DataMesh": {
@@ -28,7 +28,7 @@
     "SAP": {
         "deployCDC": true,
         "SQLFlavor": "ecc",
-        "mandt": "400",
+        "mandt": "100",
         "languages": [
             "E",
             "S"
@@ -38,10 +38,10 @@
             "MXN"
         ],
         "datasets": {
-            "cdc": "CDC_SAP_ECD",
-            "raw": "CDC_SAP_ECD",
-            "ml": "ML_MODELS_ECD",
-            "reporting": "REPORTING_ECD"
+            "cdc": "CDC_SAP_RED",
+            "raw": "CDC_SAP_RED",
+            "ml": "ML_MODELS_RED",
+            "reporting": "REPORTING_RED"
         }
     },
     "SFDC": {
